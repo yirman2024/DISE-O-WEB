@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea Páginas Web con IA | Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Hero Section con Reproductor de Video -->
+    <header class="hero">
+        <div class="container">
+            <h1>🚀 Crea Páginas Web en Minutos Sin Programar</h1>
+            <p>👉 Con un simple <strong>prompt de ChatGPT</strong>, genera <strong>landing pages, embudos de venta y páginas administradoras</strong> con diseño profesional, animaciones avanzadas y optimización para ventas.</p>
+            <button class="btn-comprar" onclick="mostrarModal()">🎯 Compra ahora por $9.99 USD</button>
+            <div class="video-container">
+                <video controls autoplay loop muted>
+                    <source src="video/video.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+            </div>
+        </div>
+    </header>
+
+    <!-- Beneficios -->
+    <section class="benefits">
+        <div class="container">
+            <h2>📌 ¿Te pasa esto?</h2>
+            <ul>
+                <li>✅ No sé programar, pero quiero una web profesional.</li>
+                <li>✅ No tengo tiempo para aprender diseño web.</li>
+                <li>✅ No quiero gastar cientos de dólares en diseñadores.</li>
+                <li>✅ Quiero una web rápida, optimizada y lista para vender.</li>
+                <li>✅ Necesito una web con animaciones y efectos modernos.</li>
+            </ul>
+            <p class="highlight">🔥 ¡Este prompt lo soluciona TODO en minutos!</p>
+            <button class="btn-comprar" onclick="mostrarModal()">🎯 Compra ahora por $9.99 USD</button>
+        </div>
+    </section>
+
+    <!-- Cómo te ayuda este sistema -->
+    <section class="features">
+        <div class="container">
+            <h2>📌 🎯 ¿Cómo te ayuda este sistema?</h2>
+            <ul>
+                <li>✅ Genera código optimizado en HTML, CSS y JavaScript.</li>
+                <li>✅ Incluye animaciones avanzadas, transiciones y efectos 3D.</li>
+                <li>✅ Diseño futurista, minimalista o de alta conversión según tu elección.</li>
+                <li>✅ Código rápido, seguro y optimizado para SEO.</li>
+                <li>✅ Páginas legales automáticas (Política de privacidad, Términos y más).</li>
+            </ul>
+            <p class="highlight">🟢 Sin complicaciones. Sin conocimientos técnicos. 100% automático.</p>
+            <button class="btn-comprar" onclick="mostrarModal()">🎯 Compra ahora por $9.99 USD</button>
+        </div>
+    </section>
+
+    <!-- Sección 3: Cómo Funciona -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>🔹 Cómo Funciona (Proceso en 3 Pasos)</h2>
+            <p>📌 🛠️ Crear tu página web con IA es así de fácil:</p>
+            <div class="steps">
+                <div class="step">1️⃣ <strong>Compra el Prompt:</strong> Pago seguro y acceso inmediato.</div>
+                <div class="step">2️⃣ <strong>Pega el texto en ChatGPT</strong> y responde algunas preguntas.</div>
+                <div class="step">3️⃣ <strong>Recibe tu página web lista en minutos.</strong> Lista para editar y subir a tu hosting.</div>
+            </div>
+            <button class="btn-comprar" onclick="mostrarModal()">🎯 Compra ahora por $9.99 USD</button>
+        </div>
+    </section>
+
+    <!-- Sección 5: Preguntas Frecuentes -->
+    <section class="faq">
+        <div class="container">
+            <h2>🔹 Preguntas Frecuentes</h2>
+            <div class="faq-item"> 
+                <p>📌 ❓ <strong>¿Necesito saber programación?</strong></p>
+                <p>👉 No, solo copias y pegas el prompt en ChatGPT.</p>
+            </div>
+            <div class="faq-item"> 
+                <p>📌 ❓ <strong>¿Funciona con cualquier tipo de negocio?</strong></p>
+                <p>👉 Sí, puedes personalizarlo para cualquier nicho: infoproductos, coaching, tiendas online, etc.</p>
+            </div>
+            <div class="faq-item"> 
+                <p>📌 ❓ <strong>¿Qué necesito para usarlo?</strong></p>
+                <p>👉 Solo ChatGPT 4 y acceso a una computadora o celular.</p>
+            </div>
+            <div class="faq-item"> 
+                <p>📌 ❓ <strong>¿Cuánto tarda en generar una página web?</strong></p>
+                <p>👉 Menos de 5 minutos.</p>
+            </div>
+            <div class="faq-item"> 
+                <p>📌 ❓ <strong>¿Cómo obtengo el prompt después de la compra?</strong></p>
+                <p>👉 Te llegará un enlace de acceso a tu whatsapp.</p>
+            </div>
+            <p>📌 <strong>¿Listo para empezar?</strong></p>
+            <button class="btn-comprar" onclick="mostrarModal()">🎯 Compra ahora por $9.99 USD</button>
+        </div>
+    </section>
+
+
+
+
+    <!-- Botón de compra -->
+<!--<button class="btn-comprar" onclick="mostrarModal()">🎯 Compra ahora por $9.99 USD</button>-->
+
+<!-- Modal de instrucciones de pago -->
+<!-- Modal de Pago -->
+<!-- Modal de Pago -->
+<div id="modalPago" class="modal">
+    <div class="modal-content">
+        <h2>💳 Instrucciones de Pago</h2>
+        <p>Realiza el pago a una de las siguientes opciones:</p>
+        <ul>
+            <li>✅ Daviplata: <strong>3137080441</strong></li>
+            <li>✅ Bancolombia Ahorro a la Mano: <strong>23117947704</strong></li>
+        </ul>
+        <p id="contador">⏳ Redirigiendo en 30 segundos...</p>
+        <p>💡 Serás redirigido automáticamente a WhatsApp para confirmar tu pedido.</p>
+        <button class="cerrar-btn" onclick="cerrarModal()">Cerrar</button>
+    </div>
+</div>
+
+<!-- CSS -->
+<style>
+    /* Estilos para el modal */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .modal-content {
+        background: rgb(0, 0, 0);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 80%;
+        max-width: 400px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { transform: scale(0.8); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+
+    /* Botón de cerrar */
+    .cerrar-btn {
+        background: #ff4d4d;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 15px;
+        transition: 0.3s;
+    }
+
+    .cerrar-btn:hover {
+        background: #cc0000;
+    }
+</style>
+
+<!-- JavaScript -->
+<script>
+    let redirigirTimeout;
+    let contadorInterval;
+
+    function mostrarModal() {
+        document.getElementById("modalPago").style.display = "flex";
+
+        let segundos = 30;
+        const contador = document.getElementById("contador");
+
+        // Iniciar cuenta regresiva en el modal
+        contadorInterval = setInterval(() => {
+            segundos--;
+            contador.textContent = `⏳ Redirigiendo en ${segundos} segundos...`;
+
+            if (segundos <= 0) {
+                clearInterval(contadorInterval);
+            }
+        }, 1000);
+
+        // Redirección automática después de 30 segundos
+        redirigirTimeout = setTimeout(redirigirWhatsApp, 30000);
+    }
+
+    function cerrarModal() {
+        document.getElementById("modalPago").style.display = "none";
+        clearTimeout(redirigirTimeout); // Evita la redirección automática si se cierra antes
+        redirigirWhatsApp(); // Redirigir al cerrar
+    }
+
+    function redirigirWhatsApp() {
+        window.location.href = "https://wa.me/573117947704?text=Hola,%20quiero%20comprar%20el%20Prompt%20por%20$9.99%20USD.";
+    }
+</script>
+
+
+
+
+
+ <!-- Oferta Final -->
+<section class="final-offer">
+    <div class="container">
+        <h2>🔥 Oferta Especial: Consigue este sistema HOY por solo <span class="precio-oferta">$9.99 USD</span></h2>
+        <p>🕒 Precio especial por tiempo limitado.</p>
+        
+        <!-- Temporizador -->
+        <div id="countdown" class="countdown"></div>
+        
+        <!-- Precio antes y ahora -->
+        <p class="precio">
+            <span class="antes">$29.99 USD</span>  
+            <span class="ahora">$9.99 USD</span>
+        </p>
+
+        <button class="btn-comprar" onclick="mostrarModal()">🎯 Compra ahora por $9.99 USD</button>
+    </div>
+</section>
+
+
+</body>
+</html>

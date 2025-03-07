@@ -1,0 +1,344 @@
+/* Fuente y colores */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary: #ff3c00;
+    --secondary: #00eaff;
+    --background: #0a0a0a;
+    --text: #ffffff;
+}
+
+/* Reset */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--text);
+    text-align: center;
+}
+
+/* Contenedor general */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #000, #111);
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+/* Beneficios y características */
+.benefits, .features, .how-it-works {
+    background: #111;
+    padding: 60px 20px;
+}
+
+.benefits h2, .features h2, .how-it-works h2 {
+    color: var(--secondary);
+    font-size: 2em;
+}
+
+.benefits ul, .features ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.benefits ul li, .features ul li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.benefits ul li:hover, .features ul li:hover {
+    background: var(--primary);
+    transform: scale(1.05);
+}
+
+/* Nueva sección: Cómo funciona */
+.how-it-works .steps {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.how-it-works .step {
+    font-size: 1.2em;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.how-it-works .step:hover {
+    background: var(--primary);
+    transform: scale(1.05);
+}
+
+/* Oferta Final */
+.final-offer {
+    background: linear-gradient(to bottom, var(--primary), #ff6600);
+    color: black;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.final-offer h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.final-offer p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Botones */
+.cta-btn {
+    background: var(--primary);
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+    background: #ff5700;
+    transform: scale(1.05);
+}
+
+/* Animación de pulsación */
+.pulse {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/**************************************************/
+
+.final-offer {
+    text-align: center;
+    background: #111;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.precio {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.precio .antes {
+    text-decoration: line-through;
+    color: #ff4d4d;
+    font-size: 1.2rem;
+}
+
+.precio .ahora {
+    color: #4dff88;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.countdown {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #ffcc00;
+}
+
+.btn-comprar {
+    background: #ff0000;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-comprar:hover {
+    background: #ff1a1a;
+}
+
+/**********************************************/
+
+/* Nueva Sección: Preguntas Frecuentes */
+.faq {
+    background: #222;
+    padding: 60px 20px;
+}
+
+.faq h2 {
+    color: var(--secondary);
+    font-size: 2em;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: left;
+    max-width: 600px;
+    margin: 10px auto;
+    transition: all 0.3s;
+}
+
+.faq-item:hover {
+    background: var(--primary);
+    transform: scale(1.05);
+}
+
+/* Animación de Urgencia para el Botón Final */
+.urgent-pulse {
+    animation: urgent-pulse 1.2s infinite;
+}
+
+@keyframes urgent-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+/**********************************************+*/
+
+/* Estilos para el Reproductor de Video */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto; /* Centrar verticalmente */
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Centrar el video en la página */
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Ajustes para el video */
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* Animación de entrada para el video */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.video-container video {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .video-container {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+}
+
+/***********************************************/
+
+/* Estilos para el Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    animation: fadeIn 0.5s;
+}
+
+.btn-comprar {
+    background: #ff0909;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    animation: pulse 1.5s infinite;
+}
+
+.btn-comprar:hover {
+    background: #ff6347;
+}
+
+/* Botón para cerrar el modal */
+.btn-cerrar {
+    background: #444;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
