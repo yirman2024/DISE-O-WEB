@@ -210,7 +210,38 @@
 
 
 
+<script>
+    
+// Función para manejar el temporizador de la oferta (5 horas)
+function iniciarTemporizador() {
+    const ahora = new Date().getTime();
+    let tiempoRestante = localStorage.getItem("tiempoExpiracion");
 
+    // Si no hay tiempo guardado o el tiempo ha expirado, reiniciar el temporizador
+    if (!tiempoRestante || tiempoRestante - ahora <= 0) {
+        tiempoRestante = ahora + (5 * 60 * 60 * 1000); // 5 horas en milisegundos
+        localStorage.setItem("tiempoExpiracion", tiempoRestante);
+    }
+
+    // Función de cuenta regresiva
+    const cuentaRegresiva = setInterval(() => {
+        const ahora = new Date().getTime();
+        let tiempo = tiempoRestante - ahora;
+
+        if (tiempo <= 0) {
+            clearInterval(cuentaRegresiva);
+            localStorage.removeItem("tiempoExpiracion");
+            iniciarTemporizador(); // Reiniciar el contador
+        } else {
+            let horas = Math.floor(tiempo / (1000 * 60 * 60));
+            let minutos = Math.floor((tiempo % (1000 * 60 * 60)) / (1000 * 60));
+            let segundos = Math.floor((tiempo % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = `⏳ ${horas}h ${minutos}m ${segundos}s`;
+        }
+    }, 1000);
+}
+</script>
 
  <!-- Oferta Final -->
 <section class="final-offer">
