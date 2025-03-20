@@ -248,7 +248,13 @@ src="https://www.facebook.com/tr?id=3596954420605770&ev=PageView&noscript=1"
 </section>
 
 <script>
-  fbq('track', 'Purchase');
+  fbq('track', 'Purchase', {
+    value: 9.99,
+    currency: 'USD',
+    content_ids: ['producto123'],
+    content_type: 'product'
+  });
 </script>
+
 </body>
 </html>
